@@ -1,0 +1,94 @@
+.App {
+  /* text-align: center; */
+}
+
+p {
+  margin: 0px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 250px;
+}
+
+.light {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  color: white;
+}
+
+.buttonContainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.countValue {
+  margin: 0px 10px 0px 10px;
+}
+
+.MessageContainer {
+  margin-top: 10px;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.MessageTime {
+  color: grey;
+  font-size: 10px;
+  margin-left: 44px;
+}
+
+.InnerMessageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.Avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.MessageText {
+  font-size: 14px;
+  color: dodgerblue;
+  max-width: calc(300px - 44px);
+}
+
+.container {
+  width: 450px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.19); 
+  box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.19);
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.nameText {
+  width: 175px;
+  max-width: 175;
+  text-align: end;
+}
+
+.emailText {
+  width: 175px;
+  max-width: 175;
+  text-align: start;
+}
+
