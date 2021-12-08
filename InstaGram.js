@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import './../App.css';
 
-function InstaGram({avatar, username, image, caption}) {
+function InstaGram({avatar, username, image, like, comment, send, caption}) {
 
 
     const [selected, setSelected] = useState(false);
@@ -13,10 +13,16 @@ function InstaGram({avatar, username, image, caption}) {
 
   return (
     <div className='post' onClick={onClick}>
-      <img src={avatar} alt='person'/>
-      <p className='userNameText'>{username}</p>
-      <image src='https://picsum.photos/200' alt='dog'/>
-      <p className='caption'>{caption}</p>
+      <div className='container'>
+        <img className='avatar' src={avatar} alt='person'/>
+        <p className='userNameText'>{username}</p>
+      </div>
+      <img className='mainImage'src={image} alt='dog'/>
+      <div className='icons'/>
+        <p className='LikeButton'>{like}</p>
+        <p className='CommentButton'>{comment}</p>
+        <p className='SendButton'>{send}</p>
+        <p className='caption'>{caption}</p>
     </div>
 
   );
